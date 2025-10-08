@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wirtualne Jutro - Gra</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="loader"></div>
+
+    <div id="game-init-data"
+         data-character="{{ character }}"
+         data-challenge="{{ challenge }}"
+         data-is-educational-mode="{{ is_educational_mode|yesno:'true,false' }}"
+         style="display: none;"></div>
+    <div id="csrf-token-container" style="display: none;">{% csrf_token %}</div>
+
+    <div id="game-container" style="display: none;">
+        <header id="life-stages-bar">
+            <h2>ROZDZIAŁY ŻYCIA</h2>
+            <div id="stages-container"></div>
+        </header>
+
+        <main id="game-wrapper">
+            <section id="story-panel">
+                <div id="character-container">
+                    <img id="character-image" src="" alt="Postać gracza">
+                </div>
+                <div id="event-container">
+                    <p id="question-text"></p>
+                    <div id="educational-content" class="tooltip" style="display: none;"></div>
+                    <div id="answers-container"></div>
+                </div>
+            </section>
+
+            <aside id="sidebar">
+                <div id="attributes-container"></div>
+                <div id="summary-container"></div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
