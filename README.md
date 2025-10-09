@@ -80,14 +80,18 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 ### Environment Variables
 
-The application requires the following environment variables to be set in the `.env` file:
+The application requires the following environment variables to be set in the `.env` file. You can copy the `.env.example` file to create your own `.env` file.
 
-| Variable             | Description                                                                    | Example Value                                  |
-| :------------------- | :----------------------------------------------------------------------------- | :--------------------------------------------- |
-| `DJANGO_SECRET_KEY`  | A secret key for a particular Django installation.                             | `"your-super-secret-key"`                      |
-| `DEBUG`              | Toggles Django's debug mode. Set to `1` for development.                       | `1`                                            |
-| `DJANGO_ALLOWED_HOSTS` | A list of strings representing the host/domain names that this Django site can serve. | `"localhost,127.0.0.1"`                        |
-| `DATABASE_URL`       | The connection string for the FRESH instance of PostgreSQL database.                             | `"postgres://user:pass@host:port/db"`          |
+| Variable | Description | Example Value |
+| :--- | :--- | :--- |
+| `DJANGO_SECRET_KEY` | A secret key for a particular Django installation. It's crucial for security. | `"django-insecure-your-secret-key"` |
+| `DEBUG` | Toggles Django's debug mode. Set to `1` for development to see detailed error pages. | `1` |
+| `DJANGO_ALLOWED_HOSTS` | A comma-separated list of host/domain names that this Django site can serve. | `"localhost,127.0.0.1"` |
+| `DATABASE_URL` | The connection string for the PostgreSQL database instance. | `"postgres://user:pass@host:port/db"` |
+| `DJANGO_LOGLEVEL` | Sets the logging level for the application. | `INFO` |
+| `DJANGO_SUPERUSER_USERNAME` | The username for the admin account to be created automatically. | `admin` |
+| `DJANGO_SUPERUSER_EMAIL`| The email for the admin account. | `admin@example.com` |
+| `DJANGO_SUPERUSER_PASSWORD`| The password for the admin account. | `your_secure_password` |
 
 ## 🛠️ Tech Stack
 
