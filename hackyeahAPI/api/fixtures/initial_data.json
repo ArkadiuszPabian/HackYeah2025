@@ -1,0 +1,940 @@
+[
+{
+  "model": "api.attribute",
+  "pk": 1,
+  "fields": {
+    "name": "wiedza"
+  }
+},
+{
+  "model": "api.attribute",
+  "pk": 2,
+  "fields": {
+    "name": "spełnienie"
+  }
+},
+{
+  "model": "api.attribute",
+  "pk": 3,
+  "fields": {
+    "name": "umiejętności społeczne"
+  }
+},
+{
+  "model": "api.attribute",
+  "pk": 4,
+  "fields": {
+    "name": "zdrowie"
+  }
+},
+{
+  "model": "api.attribute",
+  "pk": 5,
+  "fields": {
+    "name": "majątek"
+  }
+},
+{
+  "model": "api.attribute",
+  "pk": 6,
+  "fields": {
+    "name": "doświadczenie zawodowe"
+  }
+},
+{
+  "model": "api.attribute",
+  "pk": 7,
+  "fields": {
+    "name": "ryzyko"
+  }
+},
+{
+  "model": "api.lifestage",
+  "pk": 1,
+  "fields": {
+    "name": "Młodość",
+    "order": 1
+  }
+},
+{
+  "model": "api.lifestage",
+  "pk": 2,
+  "fields": {
+    "name": "Wczesna dorosłość",
+    "order": 2
+  }
+},
+{
+  "model": "api.lifestage",
+  "pk": 3,
+  "fields": {
+    "name": "Dorosłość",
+    "order": 3
+  }
+},
+{
+  "model": "api.lifestage",
+  "pk": 4,
+  "fields": {
+    "name": "Emerytura",
+    "order": 4
+  }
+},
+{
+  "model": "api.question",
+  "pk": 1,
+  "fields": {
+    "life_stage": 1,
+    "text": "Jaką szkołę średnią wybierasz?",
+    "order": 1
+  }
+},
+{
+  "model": "api.question",
+  "pk": 2,
+  "fields": {
+    "life_stage": 1,
+    "text": "Jak spędzasz czas wolny w szkole średniej?",
+    "order": 2
+  }
+},
+{
+  "model": "api.question",
+  "pk": 3,
+  "fields": {
+    "life_stage": 1,
+    "text": "Jakie hobby wybierasz?",
+    "order": 3
+  }
+},
+{
+  "model": "api.question",
+  "pk": 4,
+  "fields": {
+    "life_stage": 2,
+    "text": "Wybierasz studia, czy idziesz do pracy?",
+    "order": 1
+  }
+},
+{
+  "model": "api.question",
+  "pk": 5,
+  "fields": {
+    "life_stage": 2,
+    "text": "Jak spędzasz czas wolny na studiach?",
+    "order": 2
+  }
+},
+{
+  "model": "api.question",
+  "pk": 6,
+  "fields": {
+    "life_stage": 2,
+    "text": "Jakie hobby wybierasz?",
+    "order": 3
+  }
+},
+{
+  "model": "api.question",
+  "pk": 7,
+  "fields": {
+    "life_stage": 2,
+    "text": "Czas wybrać pracę. Jaki zawód wybierasz?",
+    "order": 4
+  }
+},
+{
+  "model": "api.question",
+  "pk": 8,
+  "fields": {
+    "life_stage": 2,
+    "text": "Jaki rodzaj umowy wybierasz?",
+    "order": 5
+  }
+},
+{
+  "model": "api.question",
+  "pk": 9,
+  "fields": {
+    "life_stage": 3,
+    "text": "Co robisz z wolnymi środkami? [10% dochodu]",
+    "order": 1
+  }
+},
+{
+  "model": "api.question",
+  "pk": 10,
+  "fields": {
+    "life_stage": 3,
+    "text": "Czy odkładasz dodatkowo pieniądze na swoją emeryturę? Jeśli tak, to ile?",
+    "order": 2
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 1,
+  "fields": {
+    "question": 1,
+    "text": "Liceum"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 2,
+  "fields": {
+    "question": 1,
+    "text": "Technikum"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 3,
+  "fields": {
+    "question": 1,
+    "text": "Szkoła zawodowa"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 4,
+  "fields": {
+    "question": 2,
+    "text": "Nauka"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 5,
+  "fields": {
+    "question": 2,
+    "text": "Hobby"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 6,
+  "fields": {
+    "question": 2,
+    "text": "Życie towarzyskie"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 7,
+  "fields": {
+    "question": 3,
+    "text": "Gry komputerowe lub sztuka"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 8,
+  "fields": {
+    "question": 3,
+    "text": "Sport"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 9,
+  "fields": {
+    "question": 3,
+    "text": "Podróże"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 10,
+  "fields": {
+    "question": 4,
+    "text": "Studia"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 11,
+  "fields": {
+    "question": 4,
+    "text": "Praca"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 12,
+  "fields": {
+    "question": 5,
+    "text": "Nauka i praca"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 13,
+  "fields": {
+    "question": 5,
+    "text": "Hobby"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 14,
+  "fields": {
+    "question": 5,
+    "text": "Życie towarzyskie"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 15,
+  "fields": {
+    "question": 6,
+    "text": "Gry komputerowe lub sztuka"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 16,
+  "fields": {
+    "question": 6,
+    "text": "Sport"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 17,
+  "fields": {
+    "question": 6,
+    "text": "Podróże"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 18,
+  "fields": {
+    "question": 7,
+    "text": "Informatyk/Doradca inwestycyjny (~10000 brutto)"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 19,
+  "fields": {
+    "question": 7,
+    "text": "Architekt/Prawnik (~12000 brutto)"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 20,
+  "fields": {
+    "question": 7,
+    "text": "Policjant/Górnik (~6000 zł brutto)"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 21,
+  "fields": {
+    "question": 7,
+    "text": "Kasjer/Obsługa klienta (~4500 zł brutto)"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 22,
+  "fields": {
+    "question": 8,
+    "text": "B2B - więcej pieniędzy, niższe składki, brak benefitów"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 23,
+  "fields": {
+    "question": 8,
+    "text": "UOP - mniej pieniędzy, więcej bezpieczeństwa"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 24,
+  "fields": {
+    "question": 8,
+    "text": "Praca na czarno - więcej pieniędzy, brak zabezpieczenia"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 25,
+  "fields": {
+    "question": 9,
+    "text": "Inwestuję bezpiecznie (np. obligacje skarbu państwa) - zysk: 5%"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 26,
+  "fields": {
+    "question": 9,
+    "text": "Inwestuję ryzykując (np. giełda) - zysk: 15% lub strata: 15%"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 27,
+  "fields": {
+    "question": 9,
+    "text": "Nie inwestuję w ogóle"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 28,
+  "fields": {
+    "question": 10,
+    "text": "0% wynagrodzenia"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 29,
+  "fields": {
+    "question": 10,
+    "text": "10% wynagrodzenia"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 30,
+  "fields": {
+    "question": 10,
+    "text": "15% wynagrodzenia"
+  }
+},
+{
+  "model": "api.condition",
+  "pk": 1,
+  "fields": {
+    "question": 3,
+    "answer": null,
+    "attribute": 2,
+    "operator": ">=",
+    "value": 10
+  }
+},
+{
+  "model": "api.condition",
+  "pk": 2,
+  "fields": {
+    "question": 4,
+    "answer": null,
+    "attribute": 1,
+    "operator": ">=",
+    "value": 40
+  }
+},
+{
+  "model": "api.condition",
+  "pk": 3,
+  "fields": {
+    "question": 5,
+    "answer": null,
+    "attribute": 1,
+    "operator": ">=",
+    "value": 80
+  }
+},
+{
+  "model": "api.condition",
+  "pk": 4,
+  "fields": {
+    "question": 6,
+    "answer": null,
+    "attribute": 2,
+    "operator": "==",
+    "value": 10
+  }
+},
+{
+  "model": "api.condition",
+  "pk": 5,
+  "fields": {
+    "question": null,
+    "answer": 18,
+    "attribute": 1,
+    "operator": ">=",
+    "value": 80
+  }
+},
+{
+  "model": "api.condition",
+  "pk": 6,
+  "fields": {
+    "question": null,
+    "answer": 19,
+    "attribute": 1,
+    "operator": ">=",
+    "value": 90
+  }
+},
+{
+  "model": "api.condition",
+  "pk": 7,
+  "fields": {
+    "question": 8,
+    "answer": null,
+    "attribute": 7,
+    "operator": "<",
+    "value": 30
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 1,
+  "fields": {
+    "answer": 1,
+    "attribute": 1,
+    "operation": "+",
+    "value": 40
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 2,
+  "fields": {
+    "answer": 2,
+    "attribute": 1,
+    "operation": "+",
+    "value": 30
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 3,
+  "fields": {
+    "answer": 3,
+    "attribute": 1,
+    "operation": "+",
+    "value": 20
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 4,
+  "fields": {
+    "answer": 4,
+    "attribute": 1,
+    "operation": "+",
+    "value": 10
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 5,
+  "fields": {
+    "answer": 5,
+    "attribute": 2,
+    "operation": "+",
+    "value": 10
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 6,
+  "fields": {
+    "answer": 6,
+    "attribute": 3,
+    "operation": "+",
+    "value": 20
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 7,
+  "fields": {
+    "answer": 7,
+    "attribute": 2,
+    "operation": "+",
+    "value": 15
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 8,
+  "fields": {
+    "answer": 7,
+    "attribute": 1,
+    "operation": "+",
+    "value": 5
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 9,
+  "fields": {
+    "answer": 8,
+    "attribute": 2,
+    "operation": "+",
+    "value": 10
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 10,
+  "fields": {
+    "answer": 8,
+    "attribute": 4,
+    "operation": "+",
+    "value": 20
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 11,
+  "fields": {
+    "answer": 9,
+    "attribute": 2,
+    "operation": "+",
+    "value": 20
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 12,
+  "fields": {
+    "answer": 9,
+    "attribute": 5,
+    "operation": "*%",
+    "value": -10
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 13,
+  "fields": {
+    "answer": 10,
+    "attribute": 1,
+    "operation": "+",
+    "value": 40
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 14,
+  "fields": {
+    "answer": 11,
+    "attribute": 6,
+    "operation": "+",
+    "value": 20
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 15,
+  "fields": {
+    "answer": 12,
+    "attribute": 1,
+    "operation": "+",
+    "value": 10
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 16,
+  "fields": {
+    "answer": 12,
+    "attribute": 6,
+    "operation": "+",
+    "value": 10
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 17,
+  "fields": {
+    "answer": 13,
+    "attribute": 2,
+    "operation": "+",
+    "value": 10
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 18,
+  "fields": {
+    "answer": 14,
+    "attribute": 3,
+    "operation": "+",
+    "value": 20
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 19,
+  "fields": {
+    "answer": 15,
+    "attribute": 2,
+    "operation": "+",
+    "value": 15
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 20,
+  "fields": {
+    "answer": 15,
+    "attribute": 1,
+    "operation": "+",
+    "value": 5
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 21,
+  "fields": {
+    "answer": 16,
+    "attribute": 2,
+    "operation": "+",
+    "value": 10
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 22,
+  "fields": {
+    "answer": 16,
+    "attribute": 4,
+    "operation": "+",
+    "value": 20
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 23,
+  "fields": {
+    "answer": 17,
+    "attribute": 2,
+    "operation": "+",
+    "value": 20
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 24,
+  "fields": {
+    "answer": 17,
+    "attribute": 5,
+    "operation": "*%",
+    "value": -10
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 25,
+  "fields": {
+    "answer": 18,
+    "attribute": 6,
+    "operation": "+",
+    "value": 30
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 26,
+  "fields": {
+    "answer": 19,
+    "attribute": 6,
+    "operation": "+",
+    "value": 30
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 27,
+  "fields": {
+    "answer": 19,
+    "attribute": 4,
+    "operation": "-",
+    "value": 10
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 28,
+  "fields": {
+    "answer": 20,
+    "attribute": 6,
+    "operation": "+",
+    "value": 30
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 29,
+  "fields": {
+    "answer": 20,
+    "attribute": 7,
+    "operation": "+",
+    "value": 20
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 30,
+  "fields": {
+    "answer": 21,
+    "attribute": 6,
+    "operation": "+",
+    "value": 30
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 31,
+  "fields": {
+    "answer": 24,
+    "attribute": 7,
+    "operation": "+",
+    "value": 20
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 32,
+  "fields": {
+    "answer": 26,
+    "attribute": 7,
+    "operation": "+",
+    "value": 5
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 42,
+  "fields": {
+    "answer": 25,
+    "attribute": 5,
+    "operation": "*%",
+    "value": 1
+  }
+},
+{
+  "model": "api.impact",
+  "pk": 43,
+  "fields": {
+    "answer": 26,
+    "attribute": 5,
+    "operation": "*%",
+    "value": -1
+  }
+},
+{
+  "model": "api.challenge",
+  "pk": 2,
+  "fields": {
+    "name": "Dobra emerytura",
+    "description": "Twoim celem jest przejście na emeryturę  z określoną kwotą oszczędności i inwestycji, zapewniającą wysoki standard życia.",
+    "attribute_to_check": 6,
+    "target_value": 1000000
+  }
+},
+{
+  "model": "api.challenge",
+  "pk": 3,
+  "fields": {
+    "name": "Dobre zdrowie",
+    "description": "Twoim celem jest życie w ten sposób, aby przechodząc na emeryturę zachować jak najlepszy stan zdrowia.",
+    "attribute_to_check": 4,
+    "target_value": 70
+  }
+},
+{
+  "model": "api.challenge",
+  "pk": 4,
+  "fields": {
+    "name": "Równowaga i stabilność",
+    "description": "Twoim celem jest osiągnięcie równowagi między pracą i życiem prywatnym przed przejściem na emeryturę.",
+    "attribute_to_check": 2,
+    "target_value": 80
+  }
+},
+{
+  "model": "api.educationalcontent",
+  "pk": 1,
+  "fields": {
+    "question": 1,
+    "content": "Liceum (4 lata) pozwala uzyskać wysoki wynik egzaminu maturalnego. Zwykle wymaga dużo nauki.\r\nTechnikum (5 lat) zapewnia wykształcenie zawodowe i przygotowanie do matury.  Zwykle wymaga dużo nauki.\r\nSzkoła zawodowa (3 lata) zapewnia wykształcenie w zawodzie, ale nie kończy się maturą.  Zwykle wymaga mniej nauki."
+  }
+},
+{
+  "model": "api.educationalcontent",
+  "pk": 2,
+  "fields": {
+    "question": 2,
+    "content": "Nauka pozwoli ci wybrać lepsze studia i zawód, rozwijanie hobby pomoże ci osiągnąć spełnienie, a aktywny udział w życiu społecznym poszerzy twoje grono znajomych."
+  }
+},
+{
+  "model": "api.educationalcontent",
+  "pk": 3,
+  "fields": {
+    "question": 3,
+    "content": "Różne pasje wpływają na twój poziom spełnienia, wiedzy i zdrowia. Pamiętaj, że drogie hobby uszczupli twój majątek."
+  }
+},
+{
+  "model": "api.educationalcontent",
+  "pk": 4,
+  "fields": {
+    "question": 4,
+    "content": "Żeby dostać się na studia, wymagany jest dobry wynik matury. Studia trwają zwykle 3 lata (licencjat) lub 5 lat (tytuł magistra). Skończenie studiów daje większe możliwości wyboru na rynku pracy.\r\nRozpoczęcie pracy od razu po szkole średniej pozwala na zdobycie doświadczenia zawodowego i wczesne rozpoczęcie gromadzenia majątku."
+  }
+},
+{
+  "model": "api.educationalcontent",
+  "pk": 5,
+  "fields": {
+    "question": 5,
+    "content": "Ucząc się i pracując pomnożysz swój majątek i zapewnisz sobie stabilną przyszłość, rozwijanie hobby pomoże ci osiągnąć spełnienie, a aktywny udział w życiu społecznym poszerzy twoje grono znajomych."
+  }
+},
+{
+  "model": "api.educationalcontent",
+  "pk": 6,
+  "fields": {
+    "question": 6,
+    "content": "Różne pasje wpływają na twój poziom spełnienia, wiedzy i zdrowia. Pamiętaj, że drogie hobby uszczupli twój majątek."
+  }
+},
+{
+  "model": "api.educationalcontent",
+  "pk": 7,
+  "fields": {
+    "question": 7,
+    "content": "Wybierając zawód zwróć uwagę nie tylko na zarobki, ale pamiętaj też, że zawody o wysokim poziomie stresu i ryzyka negatywnie wpływają na twój stan zdrowia."
+  }
+},
+{
+  "model": "api.educationalcontent",
+  "pk": 8,
+  "fields": {
+    "question": 8,
+    "content": "B2B to praca na własny rachunek, gdzie samodzielnie podpisujesz umowę z firmą. \r\nUOP to zwykła praca na etat, gdzie masz umowę z pracodawcą i wszystkie przywileje. \r\nPraca na czarno to, kiedy ktoś pracuje bez umowy i nie ma praw, które chronią pracownika."
+  }
+},
+{
+  "model": "api.educationalcontent",
+  "pk": 9,
+  "fields": {
+    "question": 9,
+    "content": "Inwestowanie pomaga powiększyć majątek, jednak często wiąże się z pewnym ryzykiem."
+  }
+},
+{
+  "model": "api.educationalcontent",
+  "pk": 10,
+  "fields": {
+    "question": 10,
+    "content": "Jeśli pracujesz na umowie o pracę i regularnie odprowadzasz składki, twoja emerytura będzie wyższa, niż w przypadku pracy na kontrakcie B2B. Ale warto pomyśleć o zapewnieniu sobie godnego życia na starość już teraz i odkładać dodatkowe środki na emeryturę."
+  }
+}
+]
