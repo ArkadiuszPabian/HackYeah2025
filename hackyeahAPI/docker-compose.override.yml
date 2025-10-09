@@ -5,16 +5,19 @@ services:
       - .env
     container_name: django_web_dev
     volumes:
-      # Mapowanie kodu lokalnego do kontenera dla live reload
       - .:/app
       - static_volume:/app/staticfiles
       - media_volume:/app/mediafiles
     environment:
-      # Nadpisuje wartości z .env
       DEBUG: 1
       DJANGO_LOGLEVEL: DEBUG
-    # Użyj serwera deweloperskiego Django dla live reload
-    command: python manage.py runserver 0.0.0.0:8080
     ports:
-      # Udostępnij port na zewnątrz dla łatwego dostępu w dev
       - "8000:8080"
+    # This command runs migrations and then starts the development server.
+    command: >
+      sh -c "
+        echo 'Waiting for the database to be ready...' &&
+        python manage.py migrate &&
+        echo 'Starting development server...' &&
+        python manage.py runserver 0.0.0.0:8080
+      "

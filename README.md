@@ -72,6 +72,7 @@ Follow these instructions to get a copy of the project up and running on your lo
     ```sh
     docker-compose up --build
     ```
+    > **IMPORTANT! At the start of the server, automatic migration takes place. Make sure you use connection string (in DATABASE_URL environment variable) for fresh database instance!**
 
 4.  **Access the application:**
     Once the containers are running, you can access the application in your browser at:
@@ -86,13 +87,14 @@ The application requires the following environment variables to be set in the `.
 | `DJANGO_SECRET_KEY`  | A secret key for a particular Django installation.                             | `"your-super-secret-key"`                      |
 | `DEBUG`              | Toggles Django's debug mode. Set to `1` for development.                       | `1`                                            |
 | `DJANGO_ALLOWED_HOSTS` | A list of strings representing the host/domain names that this Django site can serve. | `"localhost,127.0.0.1"`                        |
-| `DATABASE_URL`       | The connection string for the PostgreSQL database.                             | `"postgres://user:pass@host:port/db"`          |
+| `DATABASE_URL`       | The connection string for the FRESH instance of PostgreSQL database.                             | `"postgres://user:pass@host:port/db"`          |
 
 ## 🛠️ Tech Stack
 
 - **Frontend**: HTML / CSS / JS
 - **Backend**: Python / Django
 - **Deployments**: Docker
+- **Database**: PostgreSQL
 
 ## 🧰 Tools used
 
