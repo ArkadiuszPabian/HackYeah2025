@@ -3,7 +3,7 @@
 
 # 🎮 HackYeah 2025
 
-> **Note:** This repository was archived on October 9, 2025, and is no longer actively developed. The project was created within 24 hours as part of the HackYeah 2025 hackathon and serves as a portfolio project for the team members.
+> **Note:** This repository was archived and is no longer actively developed. The project was created within 24 hours as part of the HackYeah 2025 hackathon and serves as a portfolio project for the team members.
 
 **Live Demo: [Open](http://hackyeah.site)**
 
