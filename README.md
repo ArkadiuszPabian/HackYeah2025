@@ -130,3 +130,18 @@ Branching: [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/com
 | **`test`**     | `test/`       | Adding new tests or correcting existing tests.                                 | `test/user-service-logic`  |
 | **`docs`**     | `docs/`       | Changes to documentation (README, guides).                                     | `docs/update-readme-team`  |
 | **`refactor`** | `refactor/`   | Code change that doesn't fix a bug or add a feature (e.g., reorganizing code). | `refactor/move-auth-files` |
+
+---
+
+## 📝 Post-Hackathon Reflections & Potential Next Steps
+
+As this project was developed under a 24-hour time constraint and is now archived, we wanted to document our reflections on what we would improve with more time. This section outlines the key steps we would have taken to move this MVP towards a production-ready application.
+
+* **Production-Ready Deployment:**
+    * **Reverse Proxy (Nginx):** We would introduce Nginx to manage traffic, serve static files efficiently, and secure the application by hiding the Django admin panel and API from direct public access.
+
+* **API Enhancements:**
+    * **Granular & Versioned Endpoints:** Instead of the single `/api/game-rules/` endpoint, our next step would be to design a more RESTful API with versioning (e.g., `/api/v1/stages/`, `/api/v1/questions/`) to make it more flexible and maintainable.
+
+* **Enhanced Test Coverage:**
+    * Expand the test suite to include integration and end-to-end tests to ensure the reliability and stability of the application.
