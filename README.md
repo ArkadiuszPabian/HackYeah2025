@@ -1,11 +1,11 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Live Demo](https://img.shields.io/website?label=Live%20Demo&url=http://hackyeah.site)](http://hackyeah.site)
+[![Live Demo](https://img.shields.io/website?label=Live%20Demo&url=https://hackyeah2025-59ub.onrender.com)](https://hackyeah2025-59ub.onrender.com)
 
 # 🎮 HackYeah 2025
 
 > **Note:** This repository was archived and is no longer actively developed. The project was created within 24 hours as part of the HackYeah 2025 hackathon and serves as a portfolio project for the team members.
 
-**Live Demo: [Open](http://hackyeah.site)**
+**Live Demo: [Open](https://hackyeah2025-59ub.onrender.com)**
 
 ![App Demo Slider](static/app-demo.gif)
 
